@@ -1,26 +1,26 @@
-// My balance
-// $921.48
-
-// Spending - Last 7 days
-
-// mon
-// tue
-// wed
-// thu
-// fri
-// sat
-// sun
-
-// Total this month
-// $478.33
-
-// +2.4%
-// from last month
+import '../../scss/app.scss';
 
 export const App = () => {
     return (
         <div className=''>
-            <img src="assets/images/logo.svg" alt="logo" />
+            My balance
+            $921.48
+
+            Spending - Last 7 days
+
+            mon
+            tue
+            wed
+            thu
+            fri
+            sat
+            sun
+
+            Total this month
+            $478.33
+
+            +2.4%
+            from last month
         </div>
     );
 };

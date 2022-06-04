@@ -1,0 +1,22 @@
+@use './variables';
+
+* {
+    box-sizing: border-box;
+
+    padding: 0;
+    margin: 0;
+
+    outline: none;
+}
+
+body {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
