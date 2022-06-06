@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 
 import '../../scss/app.scss';
+
+import logo from '../../assets/images/logo.svg';
 import data from '../data.json';
 
 import { Chart } from '../components/Chart';
@@ -30,7 +32,7 @@ export const App = () => {
                         <h2>$921.48</h2>
                     </div>
                     <div className='logo'>
-                        <img src='/assets/images/logo.svg' alt='logo' />
+                        <img src={logo} alt='logo' />
                     </div>
                 </div>
                 <div className='bottom'>
