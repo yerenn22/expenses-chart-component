@@ -7,7 +7,7 @@ import { Chart } from '../components/Chart';
 
 export const App = () => {
     const [today, setToday] = useState('');
-    const [maxAmount, setMaxAmount] = useState(0);
+    const [maximumSpending, setMaximumSpending] = useState(0);
 
     useEffect(() => {
         setToday(
@@ -16,7 +16,9 @@ export const App = () => {
                 .toLowerCase()
         );
 
-        setMaxAmount(data.reduce((acc, { amount }) => Math.max(acc, amount), 0));
+        setMaximumSpending(
+            data.reduce((acc, { amount }) => Math.max(acc, amount), 0)
+        );
     }, []);
 
     return (
@@ -36,7 +38,13 @@ export const App = () => {
                     <div className='graph'>
                         {data.map(({ day, amount }, index) => {
                             return (
-                                <Chart key={index} day={day} amount={amount} today={today} maxAmount={maxAmount} />
+                                <Chart
+                                    key={index}
+                                    day={day}
+                                    amount={amount}
+                                    today={today}
+                                    maximumSpending={maximumSpending}
+                                />
                             );
                         })}
                     </div>
