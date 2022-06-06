@@ -1,0 +1,13 @@
+{
+  "short_name": "Expenses chart component",
+  "name": "Expenses chart component using React.js",
+  "icons": [
+    {
+      "src": "./favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone"
+}
