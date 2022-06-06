@@ -1,7 +1,7 @@
 {
     "name": "fm",
     "version": "0.1.0",
-    "homepage": "./",
+    "homepage": "https://yerenn22.github.io/expenses-chart-component",
     "private": true,
     "dependencies": {
         "gh-pages": "^4.0.0",
